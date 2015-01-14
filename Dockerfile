@@ -20,7 +20,7 @@ RUN git clone git://github.com/yyuu/pyenv.git /home/worker/.pyenv && \
     echo "export PATH=/home/worker/.pyenv/bin:$PATH" >> /home/worker/.bashrc && \
     echo 'eval "$(pyenv init -)"' >> /home/worker/.bashrc
 
-ENV PYTHON_VERSION 2.6.6
+ENV PYTHON_VERSION 2.7
 
 RUN source /home/worker/.bashrc && \
     pyenv install "$PYTHON_VERSION" && \
